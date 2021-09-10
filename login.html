@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <div class="navbar" id="nav">
+        <a href="./login.html">Login</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./bookings.html">Bookings</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html" class="active">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <h2>Login</h2>
+      
+    <form onsubmit="login()">
+      
+        <div class="container">
+          <label for="user_name"><b>Username</b></label>
+          <input type="text" placeholder="Username" name="user_name" required>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="password" required>
+      
+          <button type="submit">Login</button>
+
+<button onclick="document.getElementById('id01').style.display='block'">Register</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate">
+
+    <div class="container">
+      <label for="full_name"><b>Full Name</b></label>
+      <input type="text" placeholder="Full Name" name="full_name" required>
+
+      <label for="email"><b>Email Address</b></label>
+      <input type="text" placeholder="Email Address" name="email_address" required>
+
+      <label for="contact_details"><b>Contact Number</b></label>
+      <input type="text" placeholder="Contact Number" name="contact_details" required>
+
+      <label for="address"><b>Address</b></label>
+      <input type="text" placeholder="Address" name="address" required>
+
+      <label for="bank_pin"><b>Banking details</b></label>
+      <input type="text" placeholder="Banking Details" name="bank_pin" required>
+
+      <label for="user_name"><b>Username</b></label>
+      <input type="text" placeholder="Username" name="user_name" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="password" required>
+      
+      <button type="submit">Login</button>
+      <label>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div> 
+
+      <script src="./javascript.js" ></script>
+</body>
+</html>

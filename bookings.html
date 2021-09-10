@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>    
+  <div class="navbar" id="nav">
+    <a href="./login.html">Login</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./bookings.html">Bookings</a>
+    <a href="./about.html">About</a>
+    <a href="./index.html" class="active">Home</a>
+    <div href="javascript:void(0);" class="icon" onclick="myFunction()"></div>
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="booking">
+      <h2>Bookings</h2>
+        
+      <section class="infos">
+        <h3>Table for</h3>
+        <div class="table">
+          <li>
+            <a href="#" id="minus">
+              <i class="fa fa-minus"></i>
+            </a>
+          </li>
+          <li>
+            <span id="number">2</span>
+          </li>
+          <li>
+              <a href="#" id="plus">
+                <i class="fa fa-plus"></i>
+              </a>   
+          </li>
+        </div>               
+      </section>
+
+      <section class="date center">
+      <h3>Choose Date & Time Available</h3>    
+      <div class="row">
+        <div class="col s12">
+          <input id="datetimepicker" type="text" >
+        </div>
+      </div>
+    </section>
+    
+    <button class="btn btn-large grey">Confirm</button>   
+  </div>
+       
+    <script src="./javascript.js"?></script>
+</body>
+</html>

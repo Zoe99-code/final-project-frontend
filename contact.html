@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="navbar" id="nav">
+    <a href="./login.html">Login</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./bookings.html">Bookings</a>
+    <a href="./about.html">About</a>
+    <a href="./index.html" class="active">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <h2>Contact</h2>
+
+  <div class="container">
+  
+            <div class="icons">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Bree Street, Cape Town, South Africa</span>
+              </div>
+            </div>
+              <div class="icon">
+                <i class="fas fa-phone-volume"></i>
+                <span>021 559 4832</span>
+              </div>
+              <div class="icon">
+                <i class="fas fa-paper-plane"></i>
+                <span>bookings@lush.com</span>
+                </div>
+  </div>
+
+  <form
+    id="contact-form"
+    action="https://formspree.io/f/mzbyyoyk" 
+    method="POST"
+  >
+    <input
+      class="contact-input"
+      type="text"
+      name="full_name"
+      id="full_name"
+      placeholder="Name"
+      required
+    />
+    <input
+      class="contact-input"
+      type="tel"
+      name="contact_number"
+      id="contact_number"
+      placeholder="Contact Number"
+      required
+    />
+    <input
+      class="contact-input"
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Email"
+      required
+    />
+
+    <textarea
+    class="contact-input"
+    name="message"
+    id="message"
+    rows="5"
+    placeholder="Type your message here"
+  ></textarea>
+  
+      <input type="Submit" value="Submit">
+  
+    </form>
+  </div> 
+    <script src="./javascript.js"></script>
+</body>
+</html>
